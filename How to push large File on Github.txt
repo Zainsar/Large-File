@@ -1,0 +1,40 @@
+🚀 How to Push Large Files to GitHub Using Git LFS
+1. Install Git LFS
+
+Download and install from:
+https://git-lfs.com/
+
+Then run:
+
+git lfs install
+
+2. Tell Git LFS to track large file types
+
+For example, to track all .mp4 files:
+
+git lfs track "*.mp4"
+
+
+This creates a .gitattributes file.
+
+3. Add files
+git add .
+
+4. Commit changes
+git commit -m "Enable Git LFS for videos"
+
+5. Push to GitHub
+git push
+
+🔥 Important Notes (Add these to your document)
+✔️ If large files were committed earlier → Git will reject the push
+
+You must clean the commit history or delete the big files first.
+
+✔️ Git LFS only works when the files are added after enabling LFS
+
+It does NOT automatically fix old commits.
+
+✔️ GitHub Desktop works fine with Git LFS
+
+No extra setup needed.
